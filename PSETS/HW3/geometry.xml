@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<geometry>
+  <cell id="46" material="46" name="fuel" region="-121 127 -128" universe="16" />
+  <cell id="47" material="47" name="clad" region="121 -122 127 -128" universe="16" />
+  <cell id="48" material="48" name="moderator" region="122 123 -124 125 -126 127 -128" universe="16" />
+  <surface coeffs="0.0 0.0 0.3922" id="121" type="z-cylinder" />
+  <surface coeffs="0.0 0.0 0.4572" id="122" type="z-cylinder" />
+  <surface boundary="reflective" coeffs="-0.63" id="123" name="minimum x" type="x-plane" />
+  <surface boundary="reflective" coeffs="0.63" id="124" name="maximum x" type="x-plane" />
+  <surface boundary="reflective" coeffs="-0.63" id="125" name="minimum y" type="y-plane" />
+  <surface boundary="reflective" coeffs="0.63" id="126" name="maximum y" type="y-plane" />
+  <surface boundary="reflective" coeffs="-10.0" id="127" type="z-plane" />
+  <surface boundary="reflective" coeffs="10.0" id="128" type="z-plane" />
+</geometry>
