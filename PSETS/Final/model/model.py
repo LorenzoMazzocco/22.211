@@ -147,7 +147,7 @@ if machine=="laptop":
 
 ####################### ASSEMBLY ########################
 
-assembly_region = openmc.model.hexagonal_prism(edge_length=big_pitch, orientation='x', origin=(0.0, 0.0), boundary_type='reflective')
+assembly_region = openmc.model.hexagonal_prism(edge_length=big_pitch, orientation='x', origin=(0.0, 0.0), boundary_type='periodic')
 
 assembly_inner_cell = openmc.Cell(fill=block_graphite, region=assembly_region)
 assembly_inner_univ = openmc.Universe(cells=[assembly_inner_cell])
